@@ -1,0 +1,133 @@
+.main-wrapper-login {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-image: url("../img/login_footer_1.png"), url("../img/login_footer_2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+  height: 100vh;
+  @media(max-width: 767px) {
+    background-image: none;
+  }
+  header {
+    padding: 2rem 0;
+    p {
+      margin: 0;
+      font-weight: 800;
+      color: #013841;
+    }
+  }
+  
+  footer {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  input[type="submit"] {
+    background-color: #013841;
+    border: none;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+  }
+  
+  .disclaimer-form {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #013841;
+  }
+}
+ 
+
+.login-container {
+  max-width: 422px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -211px;
+  padding: 0 15px;
+  @media(max-width: 767px) {
+    position: relative;
+    margin: 2rem auto;
+    top: 0;
+    left: 0;
+  }
+  a {
+    color: #8ACC36;
+    text-decoration: none;
+    font-size: .75rem;
+    font-weight: 600;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #013841;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  label {
+    
+    font-size: .75rem;
+    color: #999999;
+  }
+  .form-label {
+    label {      
+      margin-bottom: 10px;  
+      font-weight: 600;  
+      color: #013841; 
+      font-size: .85rem;
+      &:after {
+        content: "*"
+      }
+    }
+  }
+}
+
+.wrapper-form-login {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0;
+  nav {
+    display: flex;
+    gap: 20px;
+    a {
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 50%;
+      border: 1px solid #CCCCCC;
+      color: #8ACC36;
+      text-decoration: none;
+      width: 55px;
+      height: 55px;
+      font-size: 1.3rem;
+    }
+  }  
+  p {
+    text-transform: uppercase;
+    margin: 1rem 0 0;
+    color: #CCCCCC;
+    font-size: .6rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+

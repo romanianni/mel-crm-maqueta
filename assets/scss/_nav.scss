@@ -1,0 +1,42 @@
+.main-menu {
+  background: #022D17;
+}
+
+.logo-box {
+  background-color: #8ACC36 !important;
+  justify-content: flex-start;
+}
+
+html.sidebar-enable:not([data-sidebar-size=full]) .main-menu .logo-box {
+  border-radius: 0;
+}
+
+.logo-lg{
+  padding: 0 0 0 1rem;
+}
+
+.app-menu {
+  padding: 0;
+  gap: 0;
+}
+
+.app-menu>.menu-item {
+  padding: 0;
+}
+
+.app-menu .menu-item.active .menu-link {
+  border-left: 4px solid #8ACC36;
+}
+
+.app-menu .menu-item .menu-link {
+  padding: 1rem;
+  border-left: 4px solid transparent;
+  border-radius: 0;
+  &:hover {
+    border-left: 4px solid #8ACC36;
+  }
+}
+
+.app-menu .menu-item .menu-link>.menu-text {
+  font-size: 13px;
+}
