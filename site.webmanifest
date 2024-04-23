@@ -1,0 +1,14 @@
+{
+    "name": "Mel Inmobiliario",
+    "short_name": "Mel Inmobiliario",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#8acc36",
+    "background_color": "#8acc36",
+    "display": "standalone"
+}
