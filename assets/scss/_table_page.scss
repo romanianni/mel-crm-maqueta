@@ -65,6 +65,23 @@
       color: var(--hero-green);
     }
   }
+  &.add-delete {
+    border: none;
+    > a {
+      &.add {
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        border-bottom: 1px solid #CCCCCC;
+        border-radius: 4px 0 0 4px;
+      }      
+      &.delete {
+        border: 1px solid #E74C3C;
+        border-radius: 0 4px 4px 0;
+        color: #FFFFFF;
+        background-color: #EF8A80;
+      }
+    }
+  }
 }
 
 .card-body {
@@ -170,6 +187,17 @@
   }
 }
 
+.form-control {
+  &:disabled {
+    background-color: #EAECEF;
+  }
+}
+
+.form-label {
+  color: #022D18;
+  font-size: 13px;
+}
+
 .wrapper-toggle-switch {
   display: flex;
   align-items: center;
@@ -184,4 +212,37 @@
 
 .active>.page-link, .page-link.active {
   background-color: #0E7726;
+}
+
+.selectize-control.multi .selectize-input>div {
+  background-color: #D4F2AC;
+  padding: 4px 8px;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  font-size: 0;
+  &:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f057";
+    font-size: .8rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.selectize-control.multi .selectize-input>div.active {
+  background-color: #0E7726;
+}
+
+.textearea-form {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #e9edf3;
+  border-radius: 4px;
+  padding: 5px 10px;
+  &:focus-visible {
+    outline: 1px solid #8ACF47;
+  }
 }
